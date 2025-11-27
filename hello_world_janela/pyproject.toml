@@ -29,6 +29,9 @@ copyright = "Copyright (C) 2025 by Flet"
 [tool.flet.app]
 path = "src"
 
+[tool.flet.flutter.pubspec.dependency_overrides] 
+webview_flutter_android = "4.10.1"
+
 [tool.uv]
 dev-dependencies = [
     "flet[all]==0.28.3",
