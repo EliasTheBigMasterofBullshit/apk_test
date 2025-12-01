@@ -55,7 +55,7 @@ jobs:
     - name: Flet Build APK
       run: |
         flet build apk hello_world_janela --verbose --build-number=$BUILD_NUMBER --build-version=$BUILD_VERSION
-
+        mv /home/runner/work/apk_test/apk_test/hello_world_janela/build/flutter/build/apk ~/build/apk
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4.3.4  # https://github.com/marketplace/actions/upload-a-build-artifact
       with:
